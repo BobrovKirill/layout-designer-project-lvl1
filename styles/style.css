@@ -5,6 +5,9 @@
 a{
     text-decoration: none;
 }
+p{
+    font-size: 16px;
+}
 
                             /*HEADER*/
 
@@ -38,7 +41,7 @@ header{
     color: #000;
 }
 .wrapper{
-    max-width: 85%;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -72,4 +75,44 @@ header{
     border: 1px solid #fff;
     border-radius: 10px;
     background: rgba(0, 120, 201, 0)
+}
+
+                                /*BLOCK PRIVILEGE*/
+
+.privilege{
+    background: #fff;
+}
+.privilege_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+.block{
+    width: 300px;
+}
+.block h2 {
+    padding-bottom: 15px;
+}
+
+
+                                /*BLOCK ABOUT and BLOCK CHILOUT*/
+
+.about{
+    background: #DCDCDC;
+}
+.info_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 60px 0;
+}
+.info_block{
+    width: 400px;
+}
+.info_block h2{
+    padding-bottom: 15px;
+}
+.chilout{
+    background: #fff;
 }
