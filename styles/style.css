@@ -74,7 +74,12 @@ header{
     color: #fff;
     border: 1px solid #fff;
     border-radius: 10px;
-    background: rgba(0, 120, 201, 0)
+    background: rgba(0, 120, 201, 0);
+}
+.btn:hover{
+    background: rgb(5, 199, 167, 0.4);
+    cursor: pointer;
+    
 }
 
                                 /*BLOCK PRIVILEGE*/
@@ -99,7 +104,7 @@ header{
                                 /*BLOCK ABOUT and BLOCK CHILOUT*/
 
 .about{
-    background: #DCDCDC;
+    background: #F5F5F5;
 }
 .info_wrapper{
     display: flex;
@@ -115,4 +120,70 @@ header{
 }
 .chilout{
     background: #fff;
+}
+
+
+                                /*BLOCK FEEDBACK*/
+
+
+.feedback{
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feedback h1{
+    padding: 50px 0 20px;
+}
+.feedback fieldset {
+    width: 400px;
+    border: 2px solid #66CDAA;
+    box-shadow: 0 0 2px rgba(0,0,0,1);
+    margin: 10px 0;
+}
+.feedback legend{
+    color: #66CDAA;
+    padding-bottom: 18px;
+    font-size: 22px;
+    font-weight: 900;
+}
+.in_box{
+    margin: 10px 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.labes{
+    width: 48%;
+    font-size: 18px;
+    font-weight: 600;
+    margin:0 30px 10px 0;
+}
+.inputs{
+    width: 35%;
+    margin:0 10px 10px 0;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.contact{
+    width: 32%;
+
+}
+.inputs_contact{
+    width: 50%;
+
+}
+.bnt_feedback{
+    margin: 10px 278px 40px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 550;
+    color: #66CDAA;
+    border: 1px solid #66CDAA;
+    border-radius: 10px;
+}
+.bnt_feedback:hover{
+    cursor: pointer;
+    background: #66CDAA;
+    color: #fff;
 }

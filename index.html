@@ -29,7 +29,7 @@
         <img src="images/logo.svg" alt="logo" class="img_intro">
         <h1>ЖК «Лунное море»</h1>
         <h2>Место, откуда не хочется улетать</h2>
-        <button class="btn">Забронировать</button>
+        <a class="btn" href="#on_feedback">Забронировать</a>
     </div>
 
     <div class="privilege">
@@ -58,7 +58,7 @@
                     <h2>О ЖК «Лунное море»</h2>
                     <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.<br><br> Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</p>
                 </div>
-                <img class="info_block" src="F:/hexlet/layout-designer-project-lvl1/images/moon-1.jpg" alt="about">
+                <img class="info_block" src="images/moon-1.jpg" alt="about">
             </div>
         </div>
     </div>
@@ -66,13 +66,47 @@
     <div class="chilout">
         <div class="wrapper">
             <div class="info_wrapper">
-                <img class="info_block" src="F:/hexlet/layout-designer-project-lvl1/images/moon-2.jpg" alt="chilout">
+                <img class="info_block" src="images/moon-2.jpg" alt="chilout">
                 <div class="info_block">
                     <h2>Места для отдыха</h2>
                     <p>Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.<br><br> Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="feedback">
+        <a name = "on_feedback"></a>
+        <h1>Оставьте заявку сегодня!</h1>
+        <fieldset>
+            <legend>Параметры квартиры</legend>
+            <div class="in_box">
+                <label class="labes" for="rooms">Количество комнат:</label>
+                <select class="inputs">
+                    <option value="one_rooms">1</option>
+                    <option value="two_rooms">2</option>
+                    <option value="three_rooms">3</option>
+                </select>
+                <label class="labes" for="rooms">Отделка:</label>
+                <select class="inputs">
+                    <option value="without">Без отделки</option>
+                    <option value="dirty">Черновая отделка</option>
+                    <option value="pupely">Чистовая отделка</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <div class="in_box">
+                <label class="labes contact" for="name">Имя:</label>
+                <input class="inputs inputs_contact" type="text" id="name">
+                <label class="labes contact" for="tel">Телефон:</label>
+                <input class="inputs inputs_contact" type="tel" id="tel">
+                <label class="labes contact" for="email">E-mail:</label>
+                <input class="inputs inputs_contact" type="email" id="email">
+            </div>
+        </fieldset>
+        <a class="bnt_feedback" href="#">Отправить</a>
     </div>
 </main>
 
