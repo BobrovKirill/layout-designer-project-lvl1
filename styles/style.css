@@ -49,7 +49,7 @@ header{
                                 /*BLOCK INTRO*/
 
 .intro{
-    background: url("F:/hexlet/layout-designer-project-lvl1/images/banner.png") center no-repeat;
+    background: url("../images/banner.png") center no-repeat;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -77,7 +77,7 @@ header{
     background: rgba(0, 120, 201, 0);
 }
 .btn:hover{
-    background: rgb(5, 199, 167, 0.4);
+    background: rgb(70, 130, 180, 0.4);
     cursor: pointer;
     
 }
@@ -163,6 +163,7 @@ header{
     margin:0 10px 10px 0;
     padding: 4px;
     border-radius: 10px;
+    outline: none;
 }
 
 .contact{
@@ -186,4 +187,42 @@ header{
     cursor: pointer;
     background: #66CDAA;
     color: #fff;
+}
+
+
+                                /*BLOCK FOOTER*/
+
+
+footer{
+    background: #2c3544;
+    color: #fff;
+}
+.footer_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 47px 0;
+}
+.footer_logo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.footer_logo p{
+    width: 50%;
+}
+.footer_logo img{
+    width: 30px;
+    padding-right: 10px;
+}
+.footer_block h3{
+    padding-bottom: 15px;
+}
+
+.footer_block span{
+    margin: 0 0 10px 10px;
+}
+.footer_block ul{
+    padding-left: 45px;
+    font-size: 14px;
 }
