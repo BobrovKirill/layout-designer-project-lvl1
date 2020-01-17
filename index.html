@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ЖК "Лунное море" bobrovkirill</title>
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -25,26 +25,26 @@
 </header>
 
 <main>
-    <div class="intro">
-        <img src="images/logo.svg" alt="logo" class="img_intro">
+    <div class="main_welcome">
+        <img src="images/logo.svg" alt="logo" class="img_main_welcome">
         <h1>ЖК «Лунное море»</h1>
         <h2>Место, откуда не хочется улетать</h2>
-        <a class="btn" href="#on_feedback">Забронировать</a>
+        <a class="btn_main_welcome" href="#on_feedback">Забронировать</a>
     </div>
 
     <div class="privilege">
         <a id="on_privilege"></a>
         <div class="wrapper">
             <div class="privilege_wrapper">
-                <div class="block">
+                <div class="privilege_block_text">
                     <h2>Уникальный вид</h2>
                     <p>Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.</p>
                 </div>
-                <div class="block">
+                <div class="privilege_block_text">
                     <h2>Инфраструктура</h2>
                     <p>Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.</p>
                 </div>
-                <div class="block">
+                <div class="privilege_block_text">
                     <h2>Близость к Москве</h2>
                     <p>При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.</p>
                 </div>
@@ -55,12 +55,12 @@
     <div class="about">
         <a id="on_about"></a>
         <div class="wrapper">
-            <div class="info_wrapper">
-                <div class="info_block">
+            <div class="about_wrapper">
+                <div class="about_block">
                     <h2>О ЖК «Лунное море»</h2>
                     <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.<br><br> Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</p>
                 </div>
-                <img class="info_block" src="images/moon-1.jpg" alt="about">
+                <img class="about_block" src="images/moon-1.jpg" alt="about">
             </div>
         </div>
     </div>
@@ -68,9 +68,9 @@
     <div class="chilout">
         <a id= "on_chilout"></a>
         <div class="wrapper">
-            <div class="info_wrapper">
-                <img class="info_block" src="images/moon-2.jpg" alt="chilout">
-                <div class="info_block">
+            <div class="about_wrapper">
+                <img class="about_block" src="images/moon-2.jpg" alt="chilout">
+                <div class="about_block">
                     <h2>Места для отдыха</h2>
                     <p>Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.<br><br> Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
                 </div>
@@ -83,7 +83,7 @@
         <h1>Оставьте заявку сегодня!</h1>
         <fieldset>
             <legend>Параметры квартиры</legend>
-            <div class="in_box">
+            <div class="feedback_in_fieldset">
                 <label class="labes">Количество комнат:</label>
                 <select class="inputs">
                     <option value="one_rooms">1</option>
@@ -100,7 +100,7 @@
         </fieldset>
         <fieldset>
             <legend>Контактная информация</legend>
-            <div class="in_box">
+            <div class="feedback_in_fieldset">
                 <label class="labes contact">Имя:</label>
                 <input class="inputs inputs_contact" type="text" id="name">
                 <label class="labes contact">Телефон:</label>
