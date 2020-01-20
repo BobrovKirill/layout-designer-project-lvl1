@@ -7,22 +7,37 @@ a{
     text-decoration: none;
 }
 p{
-    font-size: 14px;
+    font-size: 16px;
+}
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.bg_white{
+    background: #fff;
+}
+.bg_grey{
+    background: #f7f7f7;
+}
+.pd_bottom_15{
+    padding-bottom: 15px;
+}
+.fz_16{
+    font-size: 16px;
+}
+.fz_12{
+    font-size: 12px;
 }
 
                             /*HEADER*/
 
 header{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 10;
-    background: #fff;
-    font-size: 12px;
     font-weight: 600;
-}
-.header_logo{
     display: flex;
 	justify-content: space-between;
     align-items: center;
@@ -40,10 +55,7 @@ header{
     margin-left: 20px;
     color: #000;
 }
-.wrapper{
-    max-width: 1000px;
-    margin: 0 auto;
-}
+
 
                                 /*MAIN*/
                                 /*BLOCK main_welcome*/
@@ -56,22 +68,18 @@ header{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 45vh;
 }
 .img_main_welcome{
-    padding: 35px 0 15px;
+    margin-top: 50px;
+    padding: 30px 0 15px;
     width: 150px;
 }
 .main_welcome h1{
     font-size: 34px;
 }
-.main_welcome h2{
-    font-size: 16px;
-}
 .btn_main_welcome{
-    margin-top: 30px;
+    margin: 30px 0;
     padding: 8px;
-    font-size: 14px;
     font-weight: 550;
     color: #fff;
     border: 1px solid #fff;
@@ -86,9 +94,6 @@ header{
 
                                 /*BLOCK PRIVILEGE*/
 
-.privilege{
-    background: #fff;
-}
 .privilege_wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -98,16 +103,9 @@ header{
 .privilege_block_text{
     width: 300px;
 }
-.privilege_block_text h2 {
-    padding-bottom: 15px;
-}
-
 
                                 /*BLOCK ABOUT and BLOCK CHILOUT*/
 
-.about{
-    background: #f7f7f7;
-}
 .about_wrapper{
     display: flex;
     flex-wrap: wrap;
@@ -117,19 +115,11 @@ header{
 .about_block{
     width: 400px;
 }
-.about_block h2{
-    padding-bottom: 15px;
-}
-.chilout{
-    background: #fff;
-}
-
 
                                 /*BLOCK FEEDBACK*/
 
 
 .feedback{
-    background: #f7f7f7;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -176,16 +166,15 @@ header{
     width: 50%;
 
 }
-.bnt_feedback{
+.btn_feedback{
     margin: 10px 278px 40px 0;
     padding: 10px 20px;
-    font-size: 16px;
     font-weight: 550;
     color: #48dcbe;
     border: 1px solid #48dcbe;
     border-radius: 10px;
 }
-.bnt_feedback:hover{
+.btn_feedback:hover{
     cursor: pointer;
     background: #48dcbe;
     color: #fff;
@@ -212,21 +201,14 @@ footer{
 }
 .footer_logo p{
     width: 50%;
-    font-size: 12px;
 }
 .footer_logo img{
     width: 30px;
     padding-right: 10px;
 }
-.footer_block h3{
-    padding-bottom: 15px;
-    font-size: 16px;
-}
-
 .footer_block span{
     margin: 0 0 10px 10px;
 }
 .footer_block ul{
     padding-left: 45px;
-    font-size: 12px;
 }
