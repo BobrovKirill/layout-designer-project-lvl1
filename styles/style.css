@@ -6,7 +6,7 @@
 a{
     text-decoration: none;
 }
-p{
+p, h3, a{
     font-size: 16px;
 }
 .wrapper{
@@ -28,6 +28,13 @@ p{
 .fz_12{
     font-size: 12px;
 }
+.mg_for_header{
+    margin-top: 50px;
+}
+.pd_neghboring_block{
+    padding: 60px 0;
+}
+
 
                             /*HEADER*/
 
@@ -41,7 +48,8 @@ header{
     display: flex;
 	justify-content: space-between;
     align-items: center;
-    padding: 5px 20px;
+    padding: 0 20px;
+    height: 50px;
 }
 .logo{
     display: flex;
@@ -60,6 +68,7 @@ header{
                                 /*MAIN*/
                                 /*BLOCK main_welcome*/
 
+
 .main_welcome{
     background: url("../images/banner.png") 30% 68% no-repeat;
     color: #fff;
@@ -70,7 +79,6 @@ header{
     width: 100%;
 }
 .img_main_welcome{
-    margin-top: 50px;
     padding: 30px 0 15px;
     width: 150px;
 }
@@ -98,7 +106,6 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 60px 0;
 }
 .privilege_block_text{
     width: 300px;
@@ -110,7 +117,6 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 60px 0;
 }
 .about_block{
     width: 400px;
@@ -124,13 +130,10 @@ header{
     flex-direction: column;
     align-items: center;
 }
-.feedback h1{
-    padding: 50px 0 20px;
-}
 .feedback fieldset {
     width: 400px;
     border: 2px solid #48dcbe;
-    margin: 10px 0;
+    margin: 30px 0;
 }
 .feedback legend{
     color: #48dcbe;
@@ -167,9 +170,8 @@ header{
 
 }
 .btn_feedback{
-    margin: 10px 278px 40px 0;
     padding: 10px 20px;
-    font-weight: 550;
+    font-weight: 600;
     color: #48dcbe;
     border: 1px solid #48dcbe;
     border-radius: 10px;
