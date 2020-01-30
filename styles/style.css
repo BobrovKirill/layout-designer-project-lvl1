@@ -9,12 +9,13 @@ a{
 p, h3, a{
     font-size: 16px;
 }
+main{
+    padding-top: var(--main-header_size);
+}
 .wrapper{
     max-width: 1000px;
     margin: 0 auto;
-}
-.bg_white{
-    background: #fff;
+    padding: 60px 0;
 }
 .bg_grey{
     background: #f7f7f7;
@@ -28,11 +29,8 @@ p, h3, a{
 .fz_12{
     font-size: 12px;
 }
-.mg_for_header{
-    margin-top: 50px;
-}
-.pd_neghboring_block{
-    padding: 60px 0;
+:root {
+    --main-header_size: 50px;
 }
 
 
@@ -49,7 +47,7 @@ header{
 	justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    height: 50px;
+    height: var(--main-header_size);
 }
 .logo{
     display: flex;
