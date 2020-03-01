@@ -10,30 +10,34 @@ p, h3, a{
     font-size: 16px;
 }
 main{
-    padding-top: var(--main-header_size);
+    padding-top: var(--main-header-size);
 }
 .wrapper{
     max-width: 1000px;
     margin: 0 auto;
     padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
 }
-.bg_grey{
-    background: #f7f7f7;
-}
-.pd_bottom_15{
+.pd-bottom-15{
     padding-bottom: 15px;
 }
-.fz_16{
+.fz-16{
     font-size: 16px;
 }
-.fz_12{
+.fz-12{
     font-size: 12px;
 }
 :root {
-    --main-header_size: 50px;
+    --main-header-size: 50px;
 }
 :root {
-    --main-color_for_feedback: #48dcbe;
+    --color-for-feedback: #48dcbe;
+    --main-color-bg: #fff;
+    --secondary-color-bg: #f7f7f7;
+    --main-color-font: #fff;
+    --secondary-color-font: #000;
+    --footer-color-bg: #2c3544;
 }
 .btn{
     padding: 10px 20px;
@@ -41,20 +45,27 @@ main{
     border: 1px solid;
     border-radius: 10px;
 }
-.flex_wrap{
-    display: flex;
-    flex-wrap: wrap;
-}
-.flex_colum_cent_cent{
+.colum-center{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.color_white{
-    color: #fff;
+.main-bg-color{
+    background: var(--main-color-bg)
 }
-
+.secondary-bg-color{
+    background: var(--secondary-color-bg)
+}
+.main-font-color{
+    color: var(--main-color-font);
+}
+.secondary-font-color{
+    color: var(--secondary-color-font);
+}
+.footer-bg-color{
+    background: var(--footer-color-bg)
+}
                             /*HEADER*/
 
 header{
@@ -68,20 +79,19 @@ header{
 	justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    height: var(--main-header_size);
-    background: #fff;
+    height: var(--main-header-size);
 }
 .logo{
     display: flex;
     align-items:center;
 }
-.img_logo{
+.img-logo{
     width: 30px;
     padding: 5px 20px 5px 0;
 }
 .link{
     margin-left: 20px;
-    color: #000;
+    color: var(--secondary-color-font);
 }
 
 
@@ -89,57 +99,57 @@ header{
                                 /*BLOCK main_welcome*/
 
 
-.main_welcome{
+.main-welcome{
     background: url("../images/banner.png") 30% 68% no-repeat;
     width: 100%;
 }
-.img_main_welcome{
+.img-main-welcome{
     padding: 30px 0 15px;
     width: 150px;
 }
-.main_welcome h1{
+.main-welcome h1{
     font-size: 34px;
 }
-.btn_main_welcome{
+.btn-main-welcome{
     margin: 30px 0;
     border-color: #fff;
     background: rgba(0, 120, 201, 0);
 }
-.btn_main_welcome:hover{
+.btn-main-welcome:hover{
     background: rgb(70, 130, 180, 0.4);
     cursor: pointer;
     
 }
 
                                 /*BLOCK INFO CONTENT*/
-.space_evenly{
+.space-evenly{
     justify-content: space-evenly;
 }
-.space_between{
+.space-between{
     justify-content: space-between;
 }
-.wh_privilege{
+.wh-privilege{
     width: 30%;
 }
-.wh_content{
+.wh-content{
     width: 45%;
 }
 
                                 /*BLOCK FEEDBACK*/
 
 
-.feedback_fieldset {
+.feedback-fieldset {
     width: 400px;
-    border: 2px solid  var(--main-color_for_feedback);
+    border: 2px solid  var(--color-for-feedback);
     margin: 30px 0;
 }
-.feedback_legend{
-    color: var(--main-color_for_feedback);
+.feedback-legend{
+    color: var(--color-for-feedback);
     margin-left: 18px;
     font-size: 18px;
     font-weight: bold;
 }
-.feedback_in_fieldset{
+.feedback-in-fieldset{
     margin: 10px 15px;
     display: flex;
     flex-wrap: wrap;
@@ -163,41 +173,40 @@ header{
     width: 32%;
 
 }
-.inputs_contact{
+.inputs-contact{
     width: 50%;
 
 }
-.btn_feedback{
-    color: var(--main-color_for_feedback);
-    border-color: var(--main-color_for_feedback);
+.btn-feedback{
+    color: var(--color-for-feedback);
+    border-color: var(--color-for-feedback);
     border-radius: 10px;
 }
-.btn_feedback:hover{
+.btn-feedback:hover{
     cursor: pointer;
-    background: var(--main-color_for_feedback);
-    color: #fff;
+    background: var(--color-for-feedback);
+    color: var(--main-color-font)
 }
 
 
                                 /*BLOCK FOOTER*/
 
 
-footer{
-    background: #2c3544;
-}
-.footer_logo{
+.footer-logo{
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
-.footer_logo p{
+.footer-logo p{
     width: 50%;
 }
-.footer_logo img{
+.footer-logo img{
     width: 30px;
     padding-right: 10px;
 }
-.footer_block span{
+.footer-block span{
     margin: 0 0 10px 10px;
 }
-.footer_block ul{
+.footer-block ul{
     padding-left: 45px;
 }
