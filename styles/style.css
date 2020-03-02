@@ -1,3 +1,13 @@
+:root {
+    --color-for-feedback: #48dcbe;
+    --main-color-bg: #fff;
+    --secondary-color-bg: #f7f7f7;
+    --main-color-font: #fff;
+    --secondary-color-font: #000;
+    --footer-color-bg: #2c3544;
+
+    --main-header-size: 50px;
+}
 * {
     padding: 0;
     margin: 0;
@@ -27,17 +37,6 @@ main{
 }
 .fz-12{
     font-size: 12px;
-}
-:root {
-    --main-header-size: 50px;
-}
-:root {
-    --color-for-feedback: #48dcbe;
-    --main-color-bg: #fff;
-    --secondary-color-bg: #f7f7f7;
-    --main-color-font: #fff;
-    --secondary-color-font: #000;
-    --footer-color-bg: #2c3544;
 }
 .btn{
     padding: 10px 20px;
@@ -111,14 +110,15 @@ header{
     font-size: 34px;
 }
 .btn-main-welcome{
-    margin: 30px 0;
-    border-color: #fff;
-    background: rgba(0, 120, 201, 0);
+    border-color: var(--main-color-bg);
 }
 .btn-main-welcome:hover{
     background: rgb(70, 130, 180, 0.4);
     cursor: pointer;
     
+}
+.mg-30-0{
+    margin: 30px 0;
 }
 
                                 /*BLOCK INFO CONTENT*/
@@ -128,10 +128,10 @@ header{
 .space-between{
     justify-content: space-between;
 }
-.wh-privilege{
+.wh-30{
     width: 30%;
 }
-.wh-content{
+.wh-45{
     width: 45%;
 }
 
@@ -162,18 +162,17 @@ header{
 }
 .inputs{
     width: 35%;
-    height: 22%;
     margin:0 10px 10px 0;
     padding: 4px;
     border-radius: 10px;
     outline: none;
 }
 
-.contact{
+.wh-32{
     width: 32%;
 
 }
-.inputs-contact{
+.wh-50{
     width: 50%;
 
 }
@@ -196,9 +195,6 @@ header{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-}
-.footer-logo p{
-    width: 50%;
 }
 .footer-logo img{
     width: 30px;
